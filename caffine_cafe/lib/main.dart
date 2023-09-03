@@ -1,4 +1,5 @@
 import 'package:caffine_cafe/pages/home_page.dart';
+import 'package:caffine_cafe/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: IntroPage(),
     );
   }
 }
