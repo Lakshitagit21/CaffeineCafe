@@ -60,7 +60,7 @@ class IntroPage extends StatelessWidget {
                   padding: const EdgeInsets.all(25),
                   child: const Center(
                     child: Text(
-                      'Shop Now',
+                      'Enter Shop',
                       style: TextStyle(
                         color: Colors.white,
                       ),
