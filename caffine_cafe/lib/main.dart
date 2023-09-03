@@ -1,4 +1,3 @@
-import 'package:caffine_cafe/pages/home_page.dart';
 import 'package:caffine_cafe/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 
