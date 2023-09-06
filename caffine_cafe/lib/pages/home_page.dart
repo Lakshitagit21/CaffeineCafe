@@ -45,8 +45,54 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.brown,
                 ))),
       ),
-      drawer: const Drawer(
-        backgroundColor: Color.fromARGB(255, 225, 222, 222),
+      drawer: Drawer(
+        backgroundColor: const Color.fromARGB(255, 225, 222, 222),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Column(
+              children: [
+                DrawerHeader(
+                    child: Image.asset(
+                  'lib/images/hot-coffee.png',
+                )),
+                const Padding(
+                  padding: EdgeInsets.all(25.0),
+                  child: Divider(
+                    color: Colors.grey,
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 25),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.home,
+                    ),
+                    title: Text('Home'),
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 25),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.info,
+                    ),
+                    title: Text('About'),
+                  ),
+                ),
+              ],
+            ),
+            const Padding(
+              padding: EdgeInsets.only(left: 25, bottom: 25),
+              child: ListTile(
+                leading: Icon(
+                  Icons.logout,
+                ),
+                title: Text('Logout'),
+              ),
+            ),
+          ],
+        ),
       ),
       body: _pages[_selectedIndex],
     );
