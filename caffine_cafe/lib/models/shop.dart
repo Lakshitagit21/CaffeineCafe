@@ -7,7 +7,7 @@ class CoffeeShop extends ChangeNotifier {
   final List<Drink> _shop = [
     //iced-coffee
     Drink(
-      name: "Iced- coffee",
+      name: "Iced- Coffee",
       price: "4.00",
       imagePath: "lib/images/iced-coffee.png",
     ),
