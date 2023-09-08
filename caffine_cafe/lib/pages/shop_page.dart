@@ -18,7 +18,7 @@ class _ShopPageState extends State<ShopPage> {
     Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) =>  OrderPage(
+          builder: (context) => OrderPage(
             drink: drink,
           ),
         ));
@@ -41,6 +41,10 @@ class _ShopPageState extends State<ShopPage> {
                 ),
               ),
 
+              const SizedBox(
+                height: 20,
+              ),
+
               //list of coffee
               Expanded(
                 child: ListView.builder(
@@ -53,6 +57,7 @@ class _ShopPageState extends State<ShopPage> {
 
                     return DrinkTile(
                       drink: individualDrink,
+                      trailing: const Icon(Icons.arrow_forward),
                       onTap: () => goToOrderPage(individualDrink),
                     );
                   },

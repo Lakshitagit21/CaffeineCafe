@@ -1,4 +1,5 @@
 import 'package:caffine_cafe/components/bottom_navbar.dart';
+import 'package:caffine_cafe/pages/intro_page.dart';
 import 'package:caffine_cafe/pages/shop_page.dart';
 import 'package:flutter/material.dart';
 
@@ -24,6 +25,11 @@ class _HomePageState extends State<HomePage> {
     const ShopPage(),
     const CartPage(),
   ];
+
+  void goToIntroPage() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const IntroPage()));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -82,13 +88,16 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            const Padding(
-              padding: EdgeInsets.only(left: 25, bottom: 25),
-              child: ListTile(
-                leading: Icon(
-                  Icons.logout,
+            Padding(
+              padding: const EdgeInsets.only(left: 25, bottom: 25),
+              child: GestureDetector(
+                onTap: () => goToIntroPage(),
+                child: const ListTile(
+                  leading: Icon(
+                    Icons.logout,
+                  ),
+                  title: Text('Logout'),
                 ),
-                title: Text('Logout'),
               ),
             ),
           ],
