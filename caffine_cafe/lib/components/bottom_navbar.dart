@@ -16,7 +16,7 @@ class MyBottomNavBar extends StatelessWidget {
           activeColor: const Color.fromRGBO(97, 97, 97, 1),
           tabBackgroundColor: const Color.fromRGBO(224, 224, 224, 1),
           tabBorderRadius: 24,
-          tabActiveBorder: Border.all(color: Colors.white),
+          tabActiveBorder: Border.all(color: Colors.brown),
           onTabChange: (value) => onTabChange!(value),
           textStyle: const TextStyle(color: Colors.brown),
           tabs: const [

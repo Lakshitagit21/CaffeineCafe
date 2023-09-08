@@ -11,6 +11,36 @@ class CoffeeShop extends ChangeNotifier {
       price: "4.00",
       imagePath: "lib/images/iced-coffee.png",
     ),
+    Drink(
+      name: "Bubbled-Coffee",
+      price: "5.00",
+      imagePath: "lib/images/bubble-tea.png",
+    ),
+    Drink(
+      name: "Coffee",
+      price: "5.00",
+      imagePath: "lib/images/coffee.png",
+    ),
+    Drink(
+      name: "Black-Coffee",
+      price: "5.20",
+      imagePath: "lib/images/hot-coffee.png",
+    ),
+    Drink(
+      name: "Latte",
+      price: "4.40",
+      imagePath: "lib/images/latte.png",
+    ),
+    Drink(
+      name: "Oreo-Shake",
+      price: "4.40",
+      imagePath: "lib/images/iced-coffee.png",
+    ),
+    Drink(
+      name: "Espresso",
+      price: "4.50",
+      imagePath: "lib/images/latte.png",
+    ),
   ];
 
   //list of drinks in user cart

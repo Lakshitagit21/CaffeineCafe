@@ -39,7 +39,7 @@ class _OrderPageState extends State<OrderPage> {
     Navigator.pop(context);
 
     showDialog(
-      context: context,
+        context: context,
         builder: (context) => const AlertDialog(
               title: Text('Successfully added to the cart!'),
             ));
@@ -53,8 +53,11 @@ class _OrderPageState extends State<OrderPage> {
       body: Column(children: [
         //drink image
 
-        Image.asset(
-          widget.drink.imagePath,
+        Padding(
+          padding: const EdgeInsets.all(50.0),
+          child: Image.asset(
+            widget.drink.imagePath,
+          ),
         ),
 
         //sliders
